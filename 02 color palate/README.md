@@ -4,7 +4,7 @@ A simple web application that allows you to preview and copy hexadecimal color c
 
 ## 🔗 Live Demo
 
-👉 [Check it out here]()
+👉 [Check it out here](https://13-harini.github.io/mini-projects/02%20color%20palate/)
 
 ## Screenshot
 
