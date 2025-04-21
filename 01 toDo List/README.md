@@ -7,7 +7,7 @@ It supports adding, removing, and persisting tasks using local storage, along wi
 
 ## 🔗 Live Demo
 
-👉 [Check it out here]()
+👉 [Check it out here](https://13-harini.github.io/mini-projects/01%20toDo%20List/)
 
 ---
 
