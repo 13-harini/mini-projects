@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(130deg, #1dd3f3, #8d048d);
+}
+
+.container {
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.21rem;
+}
+#input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #8d048d;
+  width: 100%;
+  /* text-align: center; */
+  /* text-indent: 10px; */
+  padding: 3px 1rem;
+  font-size: 1.1rem;
+}
+
+.todo-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 350px;
+}
+.todo {
+  width: 100%;
+  border-left: 4px solid #8d048d;
+  border-top-left-radius: 10px;
+  /* border-end-end-radius: 10px; */
+  padding: 0.5em 1em;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-overflow: ellipsis; */
+}
+.todo span[class="delete"] {
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s;
+  &:hover {
+    color: red;
+  }
+}
+.todo span:first-child {
+  width: calc(100% - 20px);
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+
+.clear-box {
+  margin-top: 10px;
+  text-align: right;
+  padding: 10px;
+  display: none;
+}
+.clear-box span {
+  background: rgb(218, 46, 46);
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  &:hover {
+    background: #f00;
+  }
+}
+
+.block {
+  display: block;
+}
+.exist {
+  background: #c3c;
+  background: linear-gradient(130deg, #1dd3f3, #8d048d);
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.3s ease;
+  z-index: 10;
+}
+
+.exist::after {
+  content: "";
+  border-top: 15px solid transparent;
+  border-left: 15px solid #8d048d;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: -18px;
+  z-index: -1;
+}
+
+.exist span {
+  font-size: 1.5rem;
+}
